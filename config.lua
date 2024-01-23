@@ -16,6 +16,7 @@ lvim.format_on_save = {
   timeout = 1000,
 }
 
+--plugins
 lvim.plugins = {
 
   { "lunarvim/colorschemes" },
