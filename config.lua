@@ -19,9 +19,9 @@ lvim.format_on_save = {
 --plugins
 lvim.plugins = {
 
-  { "lunarvim/colorschemes" },
-  { "folke/tokyonight.nvim" },
-  { "arcticicestudio/nord-vim" },
+  --{ "lunarvim/colorschemes" },
+  --{ "arcticicestudio/nord-vim" },
+
   {
     "christoomey/vim-tmux-navigator",
     cmd = {
@@ -38,5 +38,16 @@ lvim.plugins = {
       { "<c-l>",  "<cmd><C-U>TmuxNavigateRight<cr>" },
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
+    -- Bufferline
+    {
+      'akinsho/bufferline.nvim',
+      dependencies = 'nvim-tree/nvim-web-devicons'
+    },
+
+    -- Colorscheme
+    {
+      'folke/tokyonight.nvim',
+    },
   },
 }
+vim.cmd [[colorscheme tokyonight-night]]
